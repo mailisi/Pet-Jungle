@@ -1,0 +1,151 @@
+.innpakning { 
+    width: 100%; /* innpakningens bredde */
+    background-color: #005A31;  
+    margin: auto; /* like stor høyre- og venstremarg */
+     display: flex; /* angir bruk av flexbox */
+     flex-direction: row; /* plasserer innholdet i en rad */ 
+    flex-wrap: wrap; /* bryte rader */
+    font-family: "Century Gothic", Arial , serif;
+    color: #005A31;
+     } 
+     .topptekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    flex-basis: 100%; /* fyller bredden til innpakningen */ 
+    height: 120px; /* toppteksthøyde */ 
+    background-color: #A8CD1B; 
+     padding: 1px; /* avstand mellom bokskant og innhold */ 
+    margin: 2px; /* luft rundt topptekstboks */ 
+    order: 1; /* bestemmer rekkefølgen til boksene */
+    font-family: "Century Gothic", Arial , sans-serif;
+    color: #A8CD1B ;
+    background-image: url('img/lemur4.PNG');
+
+    } 
+
+    .meny { 
+    flex-basis: 145px; /* aldri smalere enn 145 px */ 
+    background-color: #CBE32D; 
+    padding: 5px; /* avstand mellom bokskant og innhold */ 
+    margin: 5px; /* luft rundt menyboks */ 
+    order: 2; /* bestemmer rekkefølgen til boksene */
+    color: #005A31;
+    text-align: center;
+    
+
+     } 
+    .innhold { 
+    background-color: #F3FAB6; 
+     flex: 1; /* fylle ut all ledig plass i bredden */
+     order: 3; /* bestemmer rekkefølgen til boksene */
+    padding: 5px; /* avstand mellom bokskant og innhold */ 
+    margin: 5px; /* luft rundt menyboks */ 
+    text-align: center;
+
+    }
+
+#bottom {
+    flex-basis: 100%; /* fylle innpakningens bredde */ 
+    height: 150px; /* toppteksthøyde */ 
+    background-color: #005A31; /* mørkegrønn */
+     padding: 3px; /* avstand  bokskant og innhold */ 
+    margin: 3px; 
+    order: 4; 
+    font-family: "Century Gothic", Arial , sans-serif;
+    color: #8cbe05;
+    display: flex;
+    justify-content: center;
+}
+    
+body {
+    background-color: #005A31;
+}
+
+
+ul {
+    list-style-type: none; /* fjerne kulepunkter */
+    margin: 0; /* fjerne  mellomrom */
+    padding: 0; /* fjerne mellomrom */
+}
+ul a {
+    display: block; /* gjør lenker til block */
+    width: 120px; /* boksbredde */
+    padding: 10px; /* avstand bokskant og innhold */
+    border-radius: 5px; /* avrundet kant */
+    margin: 2px; /* avstand  bokser */
+    color: #F3FAB6; /* lys gul farge */
+    font-weight: bold; /* fet tekst */
+    text-decoration: none; /* fjerner understrek */
+    background-color: #8cbe05; /* grønn */
+}
+ul a:hover {
+    background-color: burlywood;
+}
+
+
+input[type="text"] {
+    display: block; /* gjør om til block */
+    width: 220px; /* tekstfeltet sin bredde */
+    padding: 5px; /* avstand mellom bokskant og innhold */
+    color: #005A31; 
+    border: none; /* ikke kantlinje */
+    border-radius: 4px; /* avrundet kantlinje */
+    margin-bottom: 10px; /* luft under tekstfelt */
+}
+
+input[type="submit"] {
+    display: block; /* omgjør til block */
+    padding: 8px 15px;  /* avstand bokskant og innhold */
+    font-weight: bold; /* fet tekst */
+    color: #005A31; 
+    border: none; /* ingen kantlinje */
+    background-color: #8cbe05; 
+}
+
+#bilde {
+    display: flex;
+    justify-content: center; /* setter i midten, vertikal retning*/
+}
+
+.film {
+    display: flex;
+    justify-content: center; /* setter i midten, vertikal retning*/
+}
+
+
+table {
+    border-collapse: collapse; /* fjerner mellomrom mellom rader/kolonner */
+    display: flex;
+    justify-content: center; /* setter i midten, vertikal retning*/
+}
+th {
+    background-color: #005A31; 
+    border: 1px solid #F3FAB6; 
+    padding: 5px; /* avstand  bokskant og innhold */
+    color: #F3FAB6;
+}
+td {
+    background-color: #A8CD1B; /* knasj grønn */
+    border: 1px dotted #F3FAB6; /* lys gul */
+    padding: 5px; /* avstand mellom bokskant og innhold */
+    color: #F3FAB6; 
+}
+
+ol {
+    display: flex;
+    flex-direction:  column; /*flexbox*/
+    align-items: center; /*horisontal retning*/
+    
+}
+
+
+
+ a {
+    color:#005A31;
+    font-weight: bolder;
+}
+ a:hover {
+    color: #8cbe05; 
+}
